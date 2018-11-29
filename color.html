@@ -1,0 +1,78 @@
+<style>
+
+img{
+	width:200px;
+	height:200px;
+}
+
+.box{
+	height:100px;
+	width:100px;
+	margin:10px;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+	float: left;
+}	
+
+#red{
+	background-color:red;
+}	
+
+#orange{
+	background-color:orange;
+}	
+
+#yellow{
+	background-color:yellow;
+}
+
+#green{
+	background-color:green;
+}
+
+#blue{
+	background-color:blue;
+}
+
+</style>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choose your favorite color</title>
+	<h1>Choose your favorite color</h1>
+</head>
+
+<body>
+	<a href="#" onclick="red()">
+		<div id="red" class="box">	
+		</div>
+	</a>
+
+	<a href="#" onclick="orange()">
+		<div id="orange" class="box">	
+		</div>
+	</a>
+
+	<a href="#" onclick="yellow()">
+		<div id="yellow" class="box">	
+		</div>
+	</a>
+	
+	<a href="#" onclick="green()">
+		<div id="green" class="box">
+		</div>
+	</a>
+	
+	<a href="#" onclick="blue()">
+		<div id="blue" class="box">
+		</div>
+	</a>
+
+</body>
+
+<script src="color.js"></script>
+
+</html>
