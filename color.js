@@ -17,10 +17,10 @@ function loader() {
 }
 
 function orangeAlert() {
-	document.body.innerHTML =
-		'<p>Orange as a favorite color represents a great need for socialization and a desire for human companionship. It represents a need for respect and acceptance within a group setting, but also a need for personal physical or social challenges within your life.</p>';
+	alert(
+		'Orange as a favorite color represents a great need for socialization and a desire for human companionship. It represents a need for respect and acceptance within a group setting, but also a need for personal physical or social challenges within your life.'
+	);
 }
-
 function yellow() {
 	alert(
 		'Yellow as a favorite color represents happiness and a love of learning. You probably have a deep need for logical order in your everyday life, and love to express your individuality by creating new ideas and sharing your collected knowledge with others.'
