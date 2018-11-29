@@ -1,37 +1,94 @@
 <style>
 
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 img{
 	width:200px;
 	height:200px;
 }
 
-.box{
-	height:100px;
-	width:100px;
-	margin:10px;
-	border-style:solid;
-	border-color:black;
-	border-width:2px;
-	float: left;
-}	
+#redheart:before, #orangeheart:before,#yellowheart:before,#greenheart:before,#blueheart:before{
+  top: -50px;
+  left: 0;
+}
 
-#red{
+#redheart:after, #orangeheart:after,#yellowheart:after,#greenheart:after,#blueheart:after{
+  bottom: 0;
+  left: 50px;
+}
+
+#redheart:before, #orangeheart:before,#yellowheart:before,#greenheart:before,#blueheart:before,
+#redheart:after, #orangeheart:after,#yellowheart:after,#greenheart:after,#blueheart:after {
+  content: "";
+  border-radius: 50%;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  
+}
+
+#redheart:before,
+#redheart:after{
 	background-color:red;
-}	
+}
 
-#orange{
+#orangeheart:before,
+#orangeheart:after{
 	background-color:orange;
-}	
+}
 
-#yellow{
+#yellowheart:before,
+#yellowheart:after{
 	background-color:yellow;
 }
 
-#green{
+#greenheart:before,
+#greenheart:after{
 	background-color:green;
 }
 
-#blue{
+#blueheart:before,
+#blueheart:after{
+	background-color:blue;
+}
+
+#redheart, #orangeheart,#yellowheart,#greenheart,#blueheart{
+  	transform: rotate(-45deg);
+	height:100px;
+	width:100px;
+	margin:45px;
+	float: left;
+}	
+
+#redheart{
+	background-color:red;
+}	
+
+#orangeheart{
+	background-color:orange;
+}	
+
+#yellowheart{
+	background-color:yellow;
+}
+
+#greenheart{
+	background-color:green;
+}
+
+#blueheart{
 	background-color:blue;
 }
 
@@ -47,27 +104,27 @@ img{
 
 <body>
 	<a href="#" onclick="red()">
-		<div id="red" class="box">	
+		<div id="redheart">	
 		</div>
 	</a>
 
 	<a href="#" onclick="orange()">
-		<div id="orange" class="box">	
+		<div id="orangeheart">	
 		</div>
 	</a>
 
 	<a href="#" onclick="yellow()">
-		<div id="yellow" class="box">	
+		<div id="yellowheart">	
 		</div>
 	</a>
 	
 	<a href="#" onclick="green()">
-		<div id="green" class="box">
+		<div id="greenheart">
 		</div>
 	</a>
 	
 	<a href="#" onclick="blue()">
-		<div id="blue" class="box">
+		<div id="blueheart">
 		</div>
 	</a>
 

@@ -8,9 +8,17 @@ function red() {
 }
 
 function orange() {
-	alert(
-		'Orange as a favorite color represents a great need for socialization and a desire for human companionship. It represents a need for respect and acceptance within a group setting, but also a need for personal physical or social challenges within your life.'
-	);
+	loader();
+	setTimeout(orangeAlert, 1500);
+}
+
+function loader() {
+	document.body.innerHTML = '<div class="loader">';
+}
+
+function orangeAlert() {
+	document.body.innerHTML =
+		'<p>Orange as a favorite color represents a great need for socialization and a desire for human companionship. It represents a need for respect and acceptance within a group setting, but also a need for personal physical or social challenges within your life.</p>';
 }
 
 function yellow() {
