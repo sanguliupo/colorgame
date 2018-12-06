@@ -13,7 +13,9 @@ function orange() {
 }
 
 function loader() {
-	document.body.innerHTML = '<div class="loader">';
+	document.body.innerHTML =
+		'<img src="Loading_icon.gif">Waiting for result...<br><br>' +
+		'<a href="index.html">Start again</a>';
 }
 
 function orangeAlert() {

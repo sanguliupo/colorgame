@@ -1,5 +1,9 @@
 <style>
 
+body{
+	background-size: cover;
+}
+
 .loader {
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #3498db; /* Blue */
@@ -7,6 +11,14 @@
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
+}
+
+.form{
+	margin-left: 60px;
+	line-height: 35px;
+	font-size: 110%;
+	font-family: 'Gamja Flower', cursive;
+
 }
 
 @keyframes spin {
@@ -98,11 +110,12 @@ img{
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
 	<title>Choose your favorite color</title>
 	<h1>Choose your favorite color</h1>
 </head>
 
-<body>
+<body background="background1.jpg">
 	<a href="#" onclick="red()">
 		<div id="redheart">	
 		</div>
@@ -126,10 +139,38 @@ img{
 	<a href="#" onclick="blue()">
 		<div id="blueheart">
 		</div>
-	</a>
+	</a><br><br><br><br><br><br><br><br>><br><br><br><br><hr>
+
+	<form class="form">
+		Name:<input type="text" name="name"><br>
+		Email:<input type="email" name="email"><br>
+		Birthday:<input type="date" name="birthday"><br>
+		Gender:
+			Male<input type="radio" name="gender" value="male">
+			Female<input type="radio" name="gender" value="female"><br>
+		Favorite Animal:
+			Cat<input type="checkbox" name="animal" value="cat">
+			Dog<input type="checkbox" name="animal" value="dog"><br>
+		Favorite shape:
+		<select multiple name="shape">
+			<option value="heart">Heart</option>
+			<option value="star">Star</option>
+		</select><br><br>
+		<input type="submit" name="submit" value="Submit"><br>
+	</form>
 
 </body>
 
 <script src="color.js"></script>
 
 </html>
+
+
+
+
+
+
+
+
+
+
