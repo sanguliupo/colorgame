@@ -1,145 +1,40 @@
-<style>
-
-body{
-	background-size: cover;
-}
-
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-}
-
-.form{
-	margin-left: 60px;
-	line-height: 35px;
-	font-size: 110%;
-	font-family: 'Gamja Flower', cursive;
-
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-img{
-	width:200px;
-	height:200px;
-}
-
-#redheart:before, #orangeheart:before,#yellowheart:before,#greenheart:before,#blueheart:before{
-  top: -50px;
-  left: 0;
-}
-
-#redheart:after, #orangeheart:after,#yellowheart:after,#greenheart:after,#blueheart:after{
-  bottom: 0;
-  left: 50px;
-}
-
-#redheart:before, #orangeheart:before,#yellowheart:before,#greenheart:before,#blueheart:before,
-#redheart:after, #orangeheart:after,#yellowheart:after,#greenheart:after,#blueheart:after {
-  content: "";
-  border-radius: 50%;
-  height: 100px;
-  position: absolute;
-  width: 100px;
-  
-}
-
-#redheart:before,
-#redheart:after{
-	background-color:red;
-}
-
-#orangeheart:before,
-#orangeheart:after{
-	background-color:orange;
-}
-
-#yellowheart:before,
-#yellowheart:after{
-	background-color:yellow;
-}
-
-#greenheart:before,
-#greenheart:after{
-	background-color:green;
-}
-
-#blueheart:before,
-#blueheart:after{
-	background-color:blue;
-}
-
-#redheart, #orangeheart,#yellowheart,#greenheart,#blueheart{
-  	transform: rotate(-45deg);
-	height:100px;
-	width:100px;
-	margin:45px;
-	float: left;
-}	
-
-#redheart{
-	background-color:red;
-}	
-
-#orangeheart{
-	background-color:orange;
-}	
-
-#yellowheart{
-	background-color:yellow;
-}
-
-#greenheart{
-	background-color:green;
-}
-
-#blueheart{
-	background-color:blue;
-}
-
-</style>
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+	
 	<title>Choose your favorite color</title>
-	<h1>Choose your favorite color</h1>
+	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body background="background1.jpg">
-	<a href="#" onclick="red()">
-		<div id="redheart">	
-		</div>
-	</a>
+	<h1>Choose your favorite color</h1>
+	<div class="hearts">
+		<a href="#" onclick="red()">
+			<div id="redheart">	
+			</div>
+		</a>
 
-	<a href="#" onclick="orange()">
-		<div id="orangeheart">	
-		</div>
-	</a>
+		<a href="#" onclick="orange()">
+			<div id="orangeheart">	
+			</div>
+		</a>
 
-	<a href="#" onclick="yellow()">
-		<div id="yellowheart">	
-		</div>
-	</a>
-	
-	<a href="#" onclick="green()">
-		<div id="greenheart">
-		</div>
-	</a>
-	
-	<a href="#" onclick="blue()">
-		<div id="blueheart">
-		</div>
-	</a><br><br><br><br><br><br><br><br>><br><br><br><br><hr>
+		<a href="#" onclick="yellow()">
+			<div id="yellowheart">	
+			</div>
+		</a>
+		
+		<a href="#" onclick="green()">
+			<div id="greenheart">
+			</div>
+		</a>
+		
+		<a href="#" onclick="blue()">
+			<div id="blueheart">
+			</div>
+		</a><br><br><br><br><br><br><br><br>><br><br><br><br>
+	</div>
 
 	<form class="form">
 		Name:<input type="text" name="name"><br>
@@ -156,9 +51,29 @@ img{
 			<option value="heart">Heart</option>
 			<option value="star">Star</option>
 		</select><br><br>
-		<input type="submit" name="submit" value="Submit"><br>
+
 	</form>
 
+	<!-- Begin Mailchimp Signup Form -->
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+	<div id="mc_embed_signup">
+		<form action="https://test.us19.list-manage.com/subscribe/post?u=9fbcad93e810eef445556aeba&amp;id=15a82e5dbe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		    <div id="mc_embed_signup_scroll">
+
+		
+		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9fbcad93e810eef445556aeba_15a82e5dbe" tabindex="-1" value=""></div>
+		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    </div>
+		</form>
+	</div>
+
+	<!--End mc_embed_signup-->
 </body>
 
 <script src="color.js"></script>

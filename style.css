@@ -1,0 +1,91 @@
+body {
+	background-size: cover;
+}
+
+.hearts {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form,
+#mc_embed_signup {
+	margin-left: 60px;
+	line-height: 35px;
+	font-size: 110%;
+	font-family: 'Gamja Flower', cursive;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+#redheart,
+#orangeheart,
+#yellowheart,
+#greenheart,
+#blueheart {
+	transform: rotate(-45deg);
+	height: 100px;
+	width: 100px;
+	margin: 45px;
+	float: left;
+}
+
+#redheart:before,
+#orangeheart:before,
+#yellowheart:before,
+#greenheart:before,
+#blueheart:before {
+	top: -50px;
+	left: 0;
+	content: '';
+	border-radius: 50%;
+	height: 100px;
+	position: absolute;
+	width: 100px;
+}
+
+#redheart:after,
+#orangeheart:after,
+#yellowheart:after,
+#greenheart:after,
+#blueheart:after {
+	bottom: 0;
+	left: 50px;
+	content: '';
+	border-radius: 50%;
+	height: 100px;
+	position: absolute;
+	width: 100px;
+}
+
+#redheart,
+#redheart:before,
+#redheart:after {
+	background-color: red;
+}
+
+#orangeheart,
+#orangeheart:before,
+#orangeheart:after {
+	background-color: orange;
+}
+
+#yellowheart,
+#yellowheart:before,
+#yellowheart:after {
+	background-color: yellow;
+}
+
+#greenheart,
+#greenheart:before,
+#greenheart:after {
+	background-color: green;
+}
+
+#blueheart,
+#blueheart:before,
+#blueheart:after {
+	background-color: blue;
+}
